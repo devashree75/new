@@ -1,0 +1,37 @@
+body {
+  background: #ffe6f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.birthday-card {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.person-photo {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.cake-image {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.birthday-text {
+  color: #e60073;
+  font-size: 2em;
+  font-weight: bold;
+}

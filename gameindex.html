@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guess The Number</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #A0522D; /* Cocoa */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fffbea;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+      animation: pop 0.6s ease-in-out;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      background-color: #fffbea;
+      color: #A0522D;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #f4e4c1;
+      transform: scale(1.05);
+    }
+
+    @keyframes pop {
+      from {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎲 Come on buddy, let's play a game 🎮😄</h1>
+  <button onclick="startGame()">Start Game</button>
+
+  <script>
+    function startGame() {
+      alert("Let's go! (You can link this to the actual game page later)");
+      // You can redirect to game.html or open a game section here
+      // window.location.href = "game.html";
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Digital Resume</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+  }
+  header {
+    background: #4CAF50;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  header h1 { margin-bottom: .5rem; }
+  header p { font-style: italic; }
+  nav {
+    background: #333;
+    padding: .5rem;
+    text-align: center;
+  }
+  nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  nav a:hover { text-decoration: underline; }
+  section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  section h2 {
+    color: #4CAF50;
+    margin-bottom: .8rem;
+    border-bottom: 2px solid #4CAF50;
+    display: inline-block;
+    padding-bottom: .2rem;
+  }
+  .skills span {
+    display: inline-block;
+    background: #e0f2e9;
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    margin-top: 2rem;
+  }
+  /* Simple JS toggle styling */
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Devashree B</h1>
+  <p>B.Sc Computer Science With Data Analytics</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hello! I am a pre-final-year Computer Science with data analytics student passionate about coding, data analytics, and web development. I enjoy solving problems and building creative digital solutions.</p>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul>
+    <li><b>B.Sc. Computer Science with data analytics</b>, KPR college of arts science and research(2024–2027) – CGPA: 8.5</li>
+    <li><b>Higher Secondary</b>, LMHSS(2022–2024) – 88%</li>
+  </ul>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Python</span>
+    <span>SQL</span>
+    <span>Data Analysis</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <ul>
+    <li><b>student E-Learning portal</b> – A web-app which helps students to study and plan their academic works</li>
+    <li><b>sales dashboard using excel</b> – Data analytics project to analyse sales and visualize insights.</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: devashri@gmail.com</p>
+  <p>Phone: +91 9876543210</p>
+  <p><a href="https://linkedin.com/in/devashri" target="_blank">LinkedIn</a></p>
+</section>
+
+<section>
+  <h2>Interactive Section</h2>
+  <button onclick="toggleMore()">Show More</button>
+  <p id="moreText" class="hidden">Outside academics, I love designing, journaling, and volunteering for social causes.</p>
+</section>
+
+<footer>
+  <p>© 2025 devashree | Digital Resume</p>
+</footer>
+
+<script>
+  function toggleMore() {
+    const moreText = document.getElementById('moreText');
+    moreText.classList.toggle('hidden');
+  }
+</script>
+
+</body>
+</html>

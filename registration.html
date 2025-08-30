@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Info Card Reveal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      padding: 40px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .container {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .card {
+      width: 45%;
+      float: left;
+      margin: 2.5%;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      min-height: 160px;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Student Info Card Reveal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      padding: 40px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .container {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .card {
+      width: 45%;
+      float: left;
+      margin: 2.5%;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      min-height: 160px;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .hidden-text {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 0.5s ease, max-height 0.5s ease;
+    }
+
+    .card:hover .hidden-text {
+      opacity: 1;
+      max-height: 100px;
+      margin-top: 10px;
+    }
+
+    .left-card {
+      background-color: #d0f0c0;
+    }
+
+    .right-card {
+      background-color: #f7c6c7;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .student-info {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .student-details {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🎓 Student Information Cards with Reveal</h2>
+
+  <div class="container clearfix">
+
+    <div class="card left-card">
+      <div class="student-info">Name: Sowmathi R</div>
+      <div class="student-info">Roll No: CSDA2023-101</div>
+      <div class="hidden-text student-details">
+        📧 Email: sowmathi@student.edu<br>
+        📞 Phone: 9876543210<br>
+        🏫 Dept: B.Sc. CSDA, 3rd Year
+      </div>
+    </div>
+
+    <div class="card right-card">
+      <div class="student-info">Name:Devashree B</div>
+      <div class="student-info">Roll No: IT2023-102</div>
+      <div class="hidden-text student-details">
+        📧 Email: devashree@student.edu<br>
+        📞 Phone: 9876543211<br>
+        🏫 Dept: B.Sc. IT, 2nd Year
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

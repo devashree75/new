@@ -1,0 +1,61 @@
+3.HTML PAGE WITH INLINE INTERNAL AND EXTERNAL CSS
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Internal and External CSS Demo</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Internal CSS -->
+  <style>
+    h2 {
+      color: green;
+      border-bottom: 2px dashed darkgreen;
+      padding-bottom: 5px;
+    }
+
+    .note {
+      background-color: #f0f8ff;
+      padding: 10px;
+      border-left: 5px solid blue;
+      margin-top: 15px;
+    }
+
+    .info {
+      font-size: 18px;
+      margin-top: 25px;
+      padding: 10px;
+      background-color: #e0ffe0;
+      border: 2px solid green;
+      width: fit-content;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to Edunet Foundation</h1>
+
+  <h2>Front End Web Development</h2>
+
+  <p>This page demonstrates the use of both internal and external CSS.</p>
+
+  <div class="note">
+    Internal CSS styled this block using the <code>.note</code> class.
+  </div>
+
+  <div class="highlight">
+    This block is styled using <strong>external CSS</strong>.
+  </div>
+
+  <!-- Name and Roll Number -->
+  <div class="info">
+    Name: Devashree B <br>
+    Roll No: 2428B0306
+  </div>
+
+</body>
+</html>
+

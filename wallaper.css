@@ -1,0 +1,17 @@
+.she{
+    display: block;
+    background-color: pink;
+    text-align: center;
+    margin: 200px;
+    width: 70%;
+    height: 200px;
+    padding-top: 40px;
+    padding-bottom: -30px;
+}
+h2{
+    text-decoration: line-through;
+}
+.border{
+    border-color: blue;
+    border-width: 20px;
+}

@@ -1,0 +1,11 @@
+n=0;
+n=int(input("enter a number:"));
+if(n%2!=0):
+   print("Weird");
+elif(n%2==0 and n>=2 and n<=5):
+    print("Not Weird");
+elif(n%2==0 and n>=6 and n<=20):
+    print("weird");
+elif(n%2==0 and n>20):
+    print("Not Weird");
+    

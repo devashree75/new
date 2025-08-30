@@ -1,0 +1,15 @@
+.header{
+    background-color:black;
+    color:white;
+    padding: 30px;
+}
+li,h1,ul{
+    display: inline;
+}
+ul{
+    margin-left: 80%;
+    color: white;
+}
+li:hover{
+    color:chocolate;
+}

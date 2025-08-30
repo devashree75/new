@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guess The Number</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #A0522D; /* Cocoa */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fffbea;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1, h2 {
+      font-weight: bold;
+      margin-bottom: 30px;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      background-color: #fffbea;
+      color: #A0522D;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #f4e4c1;
+      transform: scale(1.05);
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- First Screen -->
+  <div id="welcomeScreen">
+    <h1>🎲 Come on buddy, let's play a game 🎮😄</h1>
+    <button onclick="showGameIntro()">Start Game</button>
+  </div>
+
+  <!-- Second Screen -->
+  <div id="gameIntroScreen" class="hidden">
+    <h2>🎯 We can play by guessing a random number 🔢🤔</h2>
+    <button onclick="continueToGame()">Continue</button>
+  </div>
+
+  <script>
+    function showGameIntro() {
+      document.getElementById("welcomeScreen").classList.add("hidden");
+      document.getElementById("gameIntroScreen").classList.remove("hidden");
+    }
+
+    function continueToGame() {
+      alert("Now the guessing game will begin! (Link this to actual game later)");
+      // Example if you want to redirect to game.html:
+      // window.location.href = "game.html";
+    }
+  </script>
+
+</body>
+</html>
